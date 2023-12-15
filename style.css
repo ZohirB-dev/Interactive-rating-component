@@ -1,0 +1,129 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%, 0.1);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%)
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+
+ }
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: var(--Light-Grey);
+    margin: 10px 0;
+}
+
+
+.card{
+    border-radius: 30px;
+    padding: 30px;
+    width: 400px;
+    background-color: var(--Dark-Blue);
+}
+
+/* Specific feedback page layout */
+
+.feedback{
+    display: block;
+}
+
+
+.feedback img{
+    padding: 15px;
+    border-radius: 100%;
+    background-color: var(--Medium-Grey);
+    margin-bottom: 20px;
+}
+
+/* Options */
+
+.ratings{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.rating-circle{
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    padding: 20px;
+    background-color: var(--Medium-Grey);
+    color: var(--Light-Grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.rating-circle:hover{
+    background-color: var(--Light-Grey);
+    color: white;
+}
+
+.rating-circle.active{
+    background-color: var(--Orange);
+    color: white;
+}
+
+/* Submit button */
+
+button{
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+    background-color: var(--Orange);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer; 
+}
+
+button:hover{
+    background-color: white;
+    color: var(--Orange);
+}
+
+/* Thank you page */
+
+.thank-you{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.result p{
+    background-color: var(--Medium-Grey);
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: var(--Orange);
+    width: 200px;
+    margin: 30px 0;
+}
+
